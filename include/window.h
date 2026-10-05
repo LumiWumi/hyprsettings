@@ -1,5 +1,7 @@
 #pragma once
 
+#include "sidebar.h"
+#include <QHBoxLayout>
 #include <QWidget>
 
 class Window : public QWidget {
@@ -11,4 +13,6 @@ signals:
 public slots:
 
 private:
+  QHBoxLayout *m_layout;
+  SideBar *m_sidebar;
 };

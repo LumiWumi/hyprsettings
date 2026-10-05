@@ -13,7 +13,9 @@ qt_standard_project_setup()
 qt_add_executable(hyprsettings
   src/main.cpp
   src/window.cpp
+  src/sidebar.cpp
   include/window.h
+  include/sidebar.h
 )
 
 target_link_libraries(hyprsettings PRIVATE Qt6::Widgets)
